@@ -5,22 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    section{
-    color: #292541;
-    font-size: 20px;
+   body{
+    background-color: #C4DFE6;
     
-}
-    section p{
-        font-weight: bold;
-    }
-h1{
-    font-size: 48px;
-    text-align: center;
-}
-body{
-   
-   color: black; 
-}
+   }
+   button{
+    color: black;
+   }
 nav a{
   display: inline-block;
   background-color: #66A5AD;
@@ -59,9 +50,7 @@ nav a {
 nav a:hover {
   transform: translateY(-20px);
 }
-main{
-  
-}
+
 
 
 nav a:hover,
@@ -74,14 +63,7 @@ nav a:focus {
 nav a:visited {
   color: #292541; 
 }
-  div{
-    margin: 30% 5% 45% 32%;
-    padding: 10px 10px 10px 10px;
-    border: 10px black double;
-    color: #5ac88b;
-    border-style: dotted;
-    overflow: scroll;
-}
+
 .Hello{
   text-shadow:0px 10px 10px #66A5AD;
 }
@@ -93,15 +75,17 @@ div{
   top: 10px;
   border: 3px solid black;
 }
-button{
-  display: flexbox;
-  justify-content: center;
-}
 
 
 
     </style>
-  
+  <script>
+    
+     let hooper = prompt("Who's ur favorite hooper.");
+     let paragraph1= hooper+ " Is the worst player i've ever seen."
+     alert(paragraph1);
+    document.write("<p>" + paragraph1 + "</p>");
+  </script>
 </head>
 <body>
     
@@ -117,19 +101,26 @@ button{
           
     </nav>
     <main>
-        <h1>My GOAT Josh Hart</h1>
+        <h1>My GOAT Josh Hart</h1> 
+      
       
         </section>
         
         <div class="Hello">
-        </div>
-        
-        
-        
-    </main>
-    <img id="myImage1" 
+             <img id="myImage1" 
 style="width:100px">
-<button onclick="document.getElementById('myImage1').src='https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/c5r52rbifxn2srhp9no0'">
+<button onclick="document.getElementById('myImage1').src='https:/img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/c5r52rbifxn2srhp9no0'">
   You can't guard him.</button>
+  <img id="myImage2" 
+style="width:100px">
+<button onclick="document.getElementById('myImage2').src='https:/www.usab.com/imgproxy/dluOdOH8w2OVJZcIXsX6w-GL-OJG74PUkb56fZDO6dc/rs:fit:3000:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VzYWItY29tLXByb2QvdXBsb2FkLzIwMjQvMDcvMDkvNDFkNjIyZjktNTBjNy00YmEyLThhZTktOGE2MThhMzA0YjljLmpwZw.png'">
+  You can't guard him either.</button>
+        </div>
+
+        
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yqU_mMVTUNY?si=byjbi8FJtfL-9r75" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+ 
 </body>
 </html>
