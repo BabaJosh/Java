@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sets the character type and makes the site responsive on all devices -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JoyaGoo - Belts</title>
+
+  <!-- Styles for how everything looks on the page -->
+  <style>
+    /* Sets background and font for the whole page */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #f1f5f9;
+    }
+
+    /* Header bar at the top */
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* Site name logo style */
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #14b8a6;
+    }
+
+    /* Menu list styles */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    /* Each list item in nav */
+    nav li {
+      position: relative;
+    }
+
+    /* Style for nav links */
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+    }
+
+    /* Hover effect on links */
+    nav a:hover {
+      background-color: #f43f5e;
+      border-radius: 5px;
+    }
+
+    /* Dropdown content is hidden by default */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #1e3a8a;
+      border-radius: 6px;
+      top: 100%;
+      left: 0;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 10;
+    }
+
+    /* Show dropdown menu when hovered */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Style for dropdown links */
+    .dropdown-content a {
+      padding: 10px 15px;
+      display: block;
+    }
+
+    /* Main section of the site */
+    main {
+      padding: 40px 20px;
+    }
+
+    /* Grid layout for products */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Style for each product card */
+    .product-card {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
+      padding: 16px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Moves card up slightly on hover */
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Makes images fit and look nice */
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    /* Product name style */
+    .product-card h3 {
+      font-size: 1.1rem;
+      margin: 10px 0 5px;
+    }
+
+    /* Price and verified icon */
+    .product-card p {
+      margin: 4px 0;
+    }
+
+    /* Button that links to the product page */
+    .buy-btn {
+      margin-top: auto;
+      padding: 10px 16px;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    /* Button hover effect */
+    .buy-btn:hover {
+      background-color: #3b82f6;
+    }
+
+    /* Changes nav layout on small screens */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav Bar -->
+  <header>
+    <h1 class="logo">JoyaGoo</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Products ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="wallets.html">Wallet</a></li>
+            <li><a href="watches.html">Watch</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="belts.html">Belts</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content with belt products -->
+  <main>
+    <div class="product-grid">
+
+      <!-- LV belts -->
+      <div class="product-card">
+        <img src="belt1.jpg" alt="LV Belt">
+        <h3>LV Belt</h3>
+        <p>$38.89</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=2787851315&ref=300000171" target="_blank" class="buy-btn">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="belt2.jpg" alt="LV Belt">
+        <h3>LV Belt</h3>
+        <p>$38.89</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=2787851315&ref=300000171" target="_blank" class="buy-btn">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="belt3.jpg" alt="LV Belt">
+        <h3>LV Belt</h3>
+        <p>$38.89</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=2787851315&ref=300000171" target="_blank" class="buy-btn">View</a>
+      </div>
+<!-- Chrome Hearts Belts -->
+      <div class="product-card">
+        <img src="chrome1.jpg" alt="Chrome Hearts Belt">
+        <h3>Chrome Hearts Belt</h3>
+        <p>$29.54</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=TAOBAO&id=613701557265&ref=300000171" target="_blank" class="buy-btn">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="chrome2.jpg" alt="Chrome Hearts Belt">
+        <h3>Chrome Hearts Belt</h3>
+        <p>$29.54</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=TAOBAO&id=613701557265&ref=300000171" target="_blank" class="buy-btn">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="chrome3.jpg" alt="Chrome Hearts Belt">
+        <h3>Chrome Hearts Belt</h3>
+        <p>$29.54</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=TAOBAO&id=613701557265&ref=300000171" target="_blank" class="buy-btn">View</a>
+      </div>
+<!-- Amiri Belts -->
+      <div class="product-card">
+        <img src="amiri1.jpg" alt="Amiri Belt">
+        <h3>Amiri Belt</h3>
+        <p>$57.37</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6615393020&ref=300000171" target="_blank" class="buy-btn">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="amiri2.jpg" alt="Amiri Belt">
+        <h3>Amiri Belt</h3>
+        <p>$57.37</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6615393020&ref=300000171" target="_blank" class="buy-btn">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="amiri3.jpg" alt="Amiri Belt">
+        <h3>Amiri Belt</h3>
+        <p>$57.37</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6615393020&ref=300000171" target="_blank" class="buy-btn">View</a>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JoyaGoo Shoes</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000; /* black background */
+      color: #f1f5f9; /* light text for visibility */
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:#1e3a8a;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-card {
+      background-color: #1a1a1a; /* dark gray card background */
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: #f1f5f9;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 1.1rem;
+      margin: 10px 0 5px;
+    }
+
+    .product-card p {
+      margin: 5px 0;
+    }
+
+    .buy-btn {
+      margin-top: auto;
+      padding: 8px 14px;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .buy-btn:hover {
+      background-color: #3b82f6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">JoyaGoo</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Products ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="wallets.html">Wallets</a></li>
+            <li><a href="watches.html">Watches</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="belts.html">Belts</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="shoes1.jpg" alt="Samba OG White">
+        <h3>Samba OG White</h3>
+        <p>$34.11</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product?id=7236104917&platform=WEIDIAN" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="shoes2.jpg" alt="Samba OG Black">
+        <h3>Samba OG Black</h3>
+        <p>$34.11</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product?id=7236104917&platform=WEIDIAN" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="shoes3.jpg" alt="Air Jordan 4 Retro White/Black-neutral Grey">
+        <h3>Air Jordan 4 Retro Grey</h3>
+        <p>$76.73</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product?id=7237051564&platform=WEIDIAN" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="shoes4.jpg" alt="Air Jordan 4 Black Cat">
+        <h3>Air Jordan 4 Black Cat</h3>
+        <p>$76.73</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product?id=7237051564&platform=WEIDIAN" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="shoes5.jpg" alt="DIOR B30 MENS BLACK">
+        <h3>DIOR B30 BLACK</h3>
+        <p>$102.31</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product?id=7236159627&platform=WEIDIAN" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="shoes6.jpg" alt="DIOR B30 MENS GREY">
+        <h3>DIOR B30 GREY</h3>
+        <p>$102.31</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product?id=7236159627&platform=WEIDIAN" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="shoes7.jpg" alt="ASICS GEL-NYC Black">
+        <h3>ASICS GEL-NYC Black</h3>
+        <p>$59.26</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product?id=7250911272&platform=WEIDIAN" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="shoes8.jpg" alt="Asics GEL-NYC White and Blue">
+        <h3>ASICS GEL-NYC Blue</h3>
+        <p>$59.26</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product?id=7250911272&platform=WEIDIAN" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="travis1.png" alt="travis scotts">
+        <h3>Travis Scotts</h3>
+        <p>$80.74</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=5384300213&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="travis2.jpg" alt="travis scotts">
+        <h3>Travis Scotts</h3>
+        <p>$80.74</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=5384300213&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="travis4.jpg" alt="travis scotts">
+        <h3>Travis Scotts</h3>
+        <p>$80.74</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=5384300213&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="travis5.jpg" alt="travis scotts">
+        <h3>Travis Scotts</h3>
+        <p>$80.74</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=5384300213&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="travis6.jpg" alt="travis scotts">
+        <h3>Travis Scotts</h3>
+        <p>$80.74</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=5384300213&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="travis7.jpg" alt="travis scotts">
+        <h3>Travis Scotts</h3>
+        <p>$80.74</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=5384300213&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="jordan1 unit1.jpg" alt="Jordan 1">
+        <h3>Jordan1</h3>
+        <p>$29.75</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6265837195&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="jordan1unit2.jpg" alt="Jordan 1">
+        <h3>Jordan1</h3>
+        <p>$29.75</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6265837195&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="jordan1unit3.jpg" alt="Jordan 1">
+        <h3>Jordan1</h3>
+        <p>$29.75</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6265837195&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="jordan1unit4.jpg" alt="Jordan 1">
+        <h3>Jordan1</h3>
+        <p>$29.75</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6265837195&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

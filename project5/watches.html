@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JoyaGoo - Watches</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --secondary: #f43f5e;
+      --accent: #14b8a6;
+      --bg: #000;
+      --text: #f1f5f9;
+      --card-bg: #1a1a1a;
+      --btn-bg: #2563eb;
+      --btn-hover: #3b82f6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    nav ul.navbar {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      position: relative;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 4px;
+      display: block;
+    }
+
+    nav a:hover {
+      background-color: var(--secondary);
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: var(--primary);
+      border-radius: 6px;
+      min-width: 160px;
+      z-index: 10;
+      padding: 10px 0;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: var(--secondary);
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
+      padding: 16px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 1.1rem;
+      margin: 10px 0 5px;
+    }
+
+    .product-card p {
+      margin: 5px 0;
+    }
+
+    .buy-btn {
+      margin-top: auto;
+      padding: 10px 16px;
+      background-color: var(--btn-bg);
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .buy-btn:hover {
+      background-color: var(--btn-hover);
+    }
+
+    @media (max-width: 768px) {
+      nav ul.navbar {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">JoyaGoo</div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Products ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="wallets.html">Wallets</a></li>
+            <li><a href="watches.html">Watches</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+            <li><a href="belts.html">Belts</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="watch1.jpg" alt="Tissot Watch">
+        <h3>Tissot Watch</h3>
+        <p>$35.91</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=TAOBAO&id=740378468509&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch2.jpg" alt="Rose Gold Rolex">
+        <h3>Rose Gold Rolex</h3>
+        <p>$42.29</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=7237035506&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch3.jpg" alt="Green Rolex">
+        <h3>Green Rolex</h3>
+        <p>$42.29</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=7237035506&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch4.jpg" alt="Sporty Digital Watch">
+        <h3>Silver Rolex</h3>
+        <p>$42.29</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=7237035506&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch5.jpg" alt="Omega Watch Uranus">
+        <h3>Omega Watch Uranus</h3>
+        <p>$70.12</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6669188354&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch6.jpg" alt="Omega Watch Mars">
+        <h3>Omega Watch Mars</h3>
+        <p>$70.12</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6669188354&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch7.jpg" alt="Omega Watch Saturn">
+        <h3>Omega Watch Saturn</h3>
+        <p>$70.12</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6669188354&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch8.jpg" alt="Omega Watch Mercury">
+        <h3>Omega Watch Mercury</h3>
+        <p>$70.12</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6669188354&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch9.jpg" alt="Omega Watch Moon">
+        <h3>Omega Watch Moon</h3>
+        <p>$70.12</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6669188354&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch10.jpg" alt="Omega Watch Venus">
+        <h3>Omega Watch Venus</h3>
+        <p>$70.12</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6669188354&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch11.jpg" alt="Omega Watch Neptune">
+        <h3>Omega Watch Neptune</h3>
+        <p>$70.12</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6669188354&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch12.jpg" alt="Omega Watch Earth">
+        <h3>Omega Watch Earth</h3>
+        <p>$70.12</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6669188354&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+            <div class="product-card">
+        <img src="watch13.jpg" alt="Omega Watch Jupiter">
+        <h3>Omega Watch Jupiter</h3>
+        <p>$70.12</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product/?platform=WEIDIAN&id=6669188354&ref=300000171" class="buy-btn" target="_blank">View</a>
+      </div>
+
+      <div class="product-card">
+        <img src="watch6.jpg" alt="Minimalist White Dial">
+        <h3>Minimalist White Dial</h3>
+        <p>$39.99</p>
+        <p>✔ Verified</p>
+        <a href="https://joyagoo.com/product?id=1234567895&platform=WEIDIAN" class="buy-btn" target="_blank">View</a>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
